@@ -1,0 +1,41 @@
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Registered Users</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped">
+      <thead class="table-primary text-center">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Java Full Stack</th>
+          <th>MERN</th>
+          <th>MEAN</th>
+          <th>Father's Name</th>
+          <th>Mother's Name</th>
+          <th>Father's Mobile</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr *ngFor="let user of users" class="text-center">
+          <td>{{ user.firstname }}</td>
+          <td>{{ user.lastname }}</td>
+          <td>{{ user.mobile }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.gender }}</td>
+          <td>{{ user.address }}</td>
+          <td>{{ user.javaFullStack ? 'Yes' : 'No' }}</td>
+          <td>{{ user.mern ? 'Yes' : 'No' }}</td>
+          <td>{{ user.mean ? 'Yes' : 'No' }}</td>
+          <td>{{ user.fathername }}</td>
+          <td>{{ user.mothername }}</td>
+          <td>{{ user.fmobile }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

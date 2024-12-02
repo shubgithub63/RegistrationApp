@@ -1,0 +1,10 @@
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-logo {
+    height: 40px; /* Adjust based on your preferred size */
+    width: auto;
+  }
